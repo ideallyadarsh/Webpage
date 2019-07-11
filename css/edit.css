@@ -1,0 +1,214 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet');
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+    /*this thing will hide all the void spaces in the header and section*/
+}
+
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom,
+            #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.877);
+
+
+
+}
+
+header a {
+    font-family: var(--Snigle-font);
+    font-size: .9em;
+    color: whitesmoke;
+}
+
+header {
+    background: #dd2476;
+    background: var(--bggradient);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #dd2476;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /*When we take mouse on the dropdown menu the content will be opened*/
+    background: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    /**/
+    display: block;
+
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5em;
+
+}
+
+header .nav-item {
+    padding: 0.9 em;
+
+}
+
+header .navbar-brand {
+    padding-left: 8em;
+
+}
+
+header .nav-link:hover {
+    /*when we hover on nav items they will cange to orange color*/
+    color: black;
+}
+
+header .row .col-md-5 {
+    /*For image of memes incognito section*/
+    padding: 0vmax 3vmin;
+
+}
+
+header .row .col-md-7 {
+    /*For title and get started section section*/
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Lobster)
+}
+
+header .row .col-md-5 img {
+    /*For image incognito */
+    width: 90%;
+}
+
+header.container .col-md-7 button {
+    border-radius: 30px;
+    box-shadow: 3px 2px 5px 2px black;
+}
+
+.section-1 {
+    padding: 10vmin 0;
+}
+
+main .section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 90%;
+    height: 500px;
+    border-radius: .2em;
+}
+
+.section-1 .row .col-md-6 :last-child {
+    position: relative;
+
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    color: black;
+
+}
+
+.section-1 .row .col-md-6 .panel p {
+    font-family: var(--Lobster);
+    color: gray;
+}
+
+/*Section 2 Unique featues a\part*/
+.section-2 .cover {
+    width: 100%;
+    height: 65vmin;
+    background: url(../images/Laytons+Internet+users+beware.png);
+    background-position: -24rem -19rem;
+    background-size: 50%;
+}
+
+.section-2 .cover .content {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 25vmin;
+    /*to get the text at the center*/
+
+}
+
+.section-2 .cover .content h1 {
+    font-family: var(--Lobster);
+    color: aliceblue;
+    font-size: 6vmin;
+}
+
+.numbers .rect {
+
+    position: relative;
+    /*to make the rect float on cover image*/
+    z-index: 1;
+    /*z index is used to stack one element on top of other element with greater z index value is always on the top*/
+    width: 17rem;
+    height: 7rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    background: white;
+    border-radius: .5vmin;
+    box-shadow: 1px 2px 50px 10px pink;
+}
+
+.numbers {
+    margin-top: -12vmin;
+}
+
+.purchase {
+    margin-top: 7vmin;
+}
+
+.purchase h2 {
+    font-family: var(--Lobster);
+    color: peru;
+    padding-bottom: 4vmin;
+
+}
+
+.cards .card {
+    margin: 3vmin;
+    box-shadow: 1px 2px 20px 5px orange;
+}
+
+.cards .card-title {
+    background: lightcyan;
+    width: 100%;
+
+    font-family: var(--Rubik);
+}
+
+/*Section 3*/
+.section-3
